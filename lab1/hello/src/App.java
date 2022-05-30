@@ -6,15 +6,24 @@ public class App {
         // lab.loopTest();
         // lab.loopTestWhioutSpace();
         // lab.loopTestSum();
+        lab.sumCommandlineArgs(args);
 
         // hw.drawTriangle();
         // hw.drawTriangle(10);
         // hw.maxTest();
-        hw.testWindowPosSum();
+        // hw.testWindowPosSum();
+
     }
 }
 
 class Lab {
+    public void sumCommandlineArgs(String[] args){
+        int sum = 0;
+        for(String arg:args){
+            sum+=Integer.parseInt(arg);
+        }
+        System.out.println("The sum is: "+sum);
+    }
     public void helloWorld() {
         System.out.println("Hello, world!");
     }
