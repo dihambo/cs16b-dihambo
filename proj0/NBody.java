@@ -58,7 +58,7 @@ public class NBody {
         int N = in.readInt();
         Planet[] planets = new Planet[N];
 
-        double radius = in.readDouble();
+        in.readDouble();
         for (int i = 0; i < N; i++) {
             planets[i] = new Planet(in.readDouble(), in.readDouble(), in.readDouble(), in.readDouble(), in.readDouble(),
                     in.readString());
